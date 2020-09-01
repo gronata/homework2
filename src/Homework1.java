@@ -6,11 +6,9 @@ public class Homework1 {
         Scanner input = new Scanner(System.in);
         System.out.println("Введите целое число:");
         int num = input.nextInt();
-        System.out.printf("Последняя цифра : %d \n", getCountsOfDigits(num));
+        int lastCharacter = num%10;
+        System.out.printf("Последняя цифра : %d \n", lastCharacter);
         input.close();
     }
 
-    public static int getCountsOfDigits(int number) {
-        return String.valueOf(Math.abs(number)).length();
-    }
-}
+   }
