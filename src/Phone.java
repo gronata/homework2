@@ -48,7 +48,7 @@ public class Phone {
     public void receiveCall(String name,String number ){
         this.name = name;
         this.number = number;
-        System.out.println("Звонит " + this.name + "номер " + this.number);
+        System.out.println("Звонит " + this.name + " номер " + this.number);
     }
 
     public String getNumber() {
