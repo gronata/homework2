@@ -32,5 +32,15 @@ public static void main(String[] args){
        veterinary.treatAnimal(animal[i]);
     }
 
+
+    System.out.println("Задание №3");
+    Student[] student = new Student[2];
+    student[0] = new Aspirant("Alex","Ivanov",4,"UAI","Научное использование котиков");
+    student[1] = new Student("Petr","Petrov",5,"yus");
+
+    for (int i=0;i<student.length; i++){
+        System.out.println("Студент: "+ student[i].getLastName() + " стипендия: " +student[i].getScholarship(student[i].getAverageMark()));
+    }
+
     }
 }
