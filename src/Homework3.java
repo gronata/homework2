@@ -23,11 +23,12 @@ public static void main(String[] args){
     System.out.println("Задание №2");
     Animal[] animal = new Animal[3];
     Vet veterinary = new Vet();
-    animal[0] = new Cat("мясо рыба","домашняя","персидский");
-    animal[1] = new Horse("трава","Европа",60);
-    animal[2] = new Dog("все","весь мир",15);
+    animal[0] = new Cat("мясо рыба","домашняя","персидский", "Кошка"  );
+    animal[1] = new Horse("трава","Европа",60,"Лошадь");
+    animal[2] = new Dog("все","весь мир",15, "Собака");
 
     for (int i=0; i<animal.length;i++){
+        System.out.println(animal[i].checkType());
        veterinary.treatAnimal(animal[i]);
     }
 

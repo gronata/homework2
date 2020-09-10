@@ -50,8 +50,12 @@ private String location;
     }
 
     public void sleep(String name){
-        System.out.println("Животно спит: " +  name);
+        System.out.println("Животное спит: " +  name);
 
+    }
+
+    public String checkType(){
+    return "";
     }
 
 
