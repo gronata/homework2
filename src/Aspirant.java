@@ -1,9 +1,9 @@
 public class Aspirant extends Student {
-    private String namedissertation;
+    private String dissertationName;
 
     public Aspirant(String firstName, String lastName, double averageMark, String group, String namedissertation) {
         super(firstName, lastName, averageMark, group);
-        this.namedissertation = namedissertation;
+        this.dissertationName = dissertationName;
     }
 
 
