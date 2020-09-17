@@ -2,10 +2,9 @@ public class Horse extends Animal {
     private double speed;
     private String name;
 
-    public Horse(String food, String location, double speed,String name) {
-        super(food, location);
+    public Horse(String food, String location, double speed, String name) {
+        super(food, location, name);
         this.speed = speed;
-        this.name = name;
     }
 
     public double getSpeed() {
@@ -17,7 +16,7 @@ public class Horse extends Animal {
     }
 
     @Override
-    public String checkType(){
+    public String checkType() {
         return "Лошадь:";
     }
 }

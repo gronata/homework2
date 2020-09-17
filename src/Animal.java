@@ -14,13 +14,15 @@ public class Animal {
 //    у вас типов. В цикле отправляйте их на прием к ветеринару.
     private String food;
     private String location;
+    private String name;
 
     public Animal() {
     }
 
-    public Animal(String food, String location) {
+    public Animal(String food, String location, String name) {
         this.food = food;
         this.location = location;
+        this.name = name;
     }
 
     public String getFood() {

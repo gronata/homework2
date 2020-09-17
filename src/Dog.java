@@ -2,10 +2,9 @@ public class Dog extends Animal {
     private double weight;
     private String name;
 
-    public Dog(String food, String location, double weight,String name) {
-        super(food, location);
+    public Dog(String food, String location, double weight, String name) {
+        super(food, location, name);
         this.weight = weight;
-        this.name = name;
     }
 
     public double getWeight() {
@@ -17,7 +16,7 @@ public class Dog extends Animal {
     }
 
     @Override
-    public String checkType(){
+    public String checkType() {
         return "Собака:";
     }
 }

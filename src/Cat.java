@@ -1,18 +1,18 @@
 public class Cat extends Animal {
     private String type;
-    private String name;
 
     public Cat() {
     }
+
     public Cat(String type) {
         this.type = type;
     }
 
     public Cat(String food, String location, String type, String name) {
-        super(food, location);
+        super(food, location, name);
         this.type = type;
-        this.name = name;
     }
+
 
     public String getType() {
         return type;
@@ -21,8 +21,9 @@ public class Cat extends Animal {
     public void setType(String type) {
         this.type = type;
     }
+
     @Override
-    public String checkType(){
+    public String checkType() {
         return "Кошка:";
     }
 }
