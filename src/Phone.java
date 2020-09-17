@@ -23,12 +23,40 @@
 //        этих телефонов.
 
 public class Phone {
-    String number;
-    String model;
-    String name;
-    double weight;
+    private String number;
+    private String model;
+    private String name;
+    private double weight;
 
     public Phone() {
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 
     public Phone(String number, String model) {
